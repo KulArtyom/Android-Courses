@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_pink"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnYellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left|center|right"
+        android:gravity="center"
+        android:text="@string/btn_yellow" />
+
+    <Button
+        android:id="@+id/bntBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right|bottom"
+        android:layout_toEndOf="@+id/btnGreen"
+        android:layout_toRightOf="@+id/btnGreen"
+        android:text="Black color" />
+
+    <Button
+        android:id="@+id/btnGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_toEndOf="@+id/btnYellow"
+        android:layout_toRightOf="@+id/btnYellow"
+        android:text="Green Color" />
+
+    <TextView
+        android:id="@+id/tvAndroidCourses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bntBlack"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/bntBlack"
+        android:layout_below="@+id/btnYellow"
+        android:gravity="center_horizontal"
+        android:text="Android Coursees"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/beruza"
+        android:textSize="22dp" />
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvAndroidCourses"
+        android:text="Change text" />
+
+    <TextView
+        android:id="@+id/tvC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnChange"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:gravity="center"
+        android:text="C++"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/tvJava"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="Java"
+        android:textSize="40dp" />
+
+
+
+
+</RelativeLayout>
