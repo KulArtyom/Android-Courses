@@ -10,12 +10,14 @@
         android:id="@+id/btnLessons"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="97dp"
         android:background="@drawable/rounded_button"
         android:text="Lessons"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btnHomeworks"
+        android:layout_alignStart="@+id/btnHomeworks"
+        android:layout_marginTop="33dp"
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/btnHomeworks"
@@ -26,6 +28,19 @@
         android:layout_marginTop="38dp"
         android:background="@drawable/rounded_button"
         android:text="HomeWorks"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_other"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
+        android:text="Other"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btnHomeworks"
+        android:layout_alignStart="@+id/btnHomeworks"
+        android:textAllCaps="false"/>
 
 </RelativeLayout>

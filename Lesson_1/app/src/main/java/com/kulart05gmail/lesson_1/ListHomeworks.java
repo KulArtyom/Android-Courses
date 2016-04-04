@@ -7,11 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.kulart05gmail.lesson_1.HomeWorks.Homework_2;
-import com.kulart05gmail.lesson_1.Lessons.Lesson_1;
+import com.kulart05gmail.lesson_1.HomeWorks.Homework_3;
+import com.kulart05gmail.lesson_1.Lessons.Lesson_1.Lesson_1;
 
 
 /**
@@ -25,7 +25,7 @@ public class ListHomeworks extends Activity implements AdapterView.OnItemClickLi
         setContentView(R.layout.list_homeworks);
 
 
-        String[] homeworks = {"Homework 1","Homework 2", "Homework 3", "Homework 4", "Homework 5", "Homework 6", "Homework 7"
+        String[] homeworks = {"Homework 1", "Homework 2", "Homework 3", "Homework 4", "Homework 5", "Homework 6", "Homework 7"
                 , "Homework3", "Homework3", "Homework3", "Homework3", "Homework3", "Homework3"};
 
 
@@ -55,6 +55,12 @@ public class ListHomeworks extends Activity implements AdapterView.OnItemClickLi
                 Intent homework2 = new Intent(this, Homework_2.class);
                 startActivity(homework2);
                 break;
+            case 2:
+                Intent homework3 = new Intent(this, Homework_3.class);
+                startActivity(homework3);
+                break;
+            case 3:
+
 
 
         }

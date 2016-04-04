@@ -1,4 +1,4 @@
-package com.kulart05gmail.lesson_1.Lessons;
+package com.kulart05gmail.lesson_1.Lessons.Lesson_2;
 
 import android.app.Activity;
 import android.os.Bundle;

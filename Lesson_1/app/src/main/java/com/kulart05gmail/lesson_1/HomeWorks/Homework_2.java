@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.kulart05gmail.lesson_1.R;
@@ -38,6 +39,7 @@ public class Homework_2 extends Activity {
 
     private Button btnShow;
     private TextView tvTextParse;
+    private ProgressBar bar;
 
 
     @Override
@@ -47,6 +49,9 @@ public class Homework_2 extends Activity {
 
         btnShow = (Button) findViewById(R.id.btnShow);
         tvTextParse = (TextView) findViewById(R.id.tvParseText);
+        bar = (ProgressBar) findViewById(R.id.pbProgressBar);
+
+
 
 
         btnShow.setOnClickListener(new View.OnClickListener() {
@@ -56,7 +61,27 @@ public class Homework_2 extends Activity {
             }
         });
 
+
+
     }
+
+
+    private void startThread(){
+        Thread thread = new Thread(runnable);
+        thread.start();
+    }
+
+    private Runnable runnable = new Runnable() {
+        @Override
+        public void run() {
+            try {
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } ;
+        }
+    };
+
+
 
 
     public class JSONTask extends AsyncTask<String, String, String> {
@@ -64,6 +89,9 @@ public class Homework_2 extends Activity {
 
         @Override
         protected String doInBackground(String... params) {
+            Thread thread = new Thread(runnable);
+            thread.start();
+            //выполняется в отдельном потоке
             HttpURLConnection connection = null;
             BufferedReader reader = null;
             try {
@@ -81,9 +109,37 @@ public class Homework_2 extends Activity {
                     while ((line = reader.readLine()) != null) {
                         buffer.append(line + "");
                     }
-                    return buffer.toString();
+                    String finalJson = buffer.toString();
 
+
+                    JSONObject parentObject = new JSONObject(finalJson);
+                    JSONArray parentArray = parentObject.getJSONArray("customers");
+
+                    StringBuffer finalBufferData = new StringBuffer();
+                    for (int i = 0; i < parentArray.length(); i++) {
+                        JSONObject finalObject = parentArray.getJSONObject(i);
+
+                        int id = finalObject.getInt("id");
+                        String name = finalObject.getString("name");
+                        String surname = finalObject.getString("surname");
+                        String middlename = finalObject.getString("middle_name");
+                        String lastOrder = finalObject.getString("lastOrder");
+                        String dateofBirth = finalObject.getString("dateOfBirth");
+                        String car = finalObject.getString("car");
+                        boolean discount = Boolean.parseBoolean(finalObject.getString("discount"));
+                        finalBufferData.append("id - " + id + "\n" +
+                                               "name - " + name + "\n" +
+                                                "surname - " + surname + "\n" +
+                                                "middle name - " + middlename + "\n" +
+                                                "lastOrder - " + lastOrder + "\n" +
+                                               "dateofBirth - " + dateofBirth + "\n" +
+                                                "car - " + car + "\n" +
+                                                "discount - " + discount + "\n");
+                    }
+                    return finalBufferData.toString();
                 } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (JSONException e) {
                     e.printStackTrace();
                 }
             } catch (MalformedURLException e) {
@@ -104,7 +160,18 @@ public class Homework_2 extends Activity {
         }
 
         @Override
+        protected void onProgressUpdate(String... values) {
+            bar.setProgress(BIND_IMPORTANT);
+        }
+
+        @Override
+        protected void onPreExecute() {
+            bar.setVisibility(View.VISIBLE);
+        }
+
+        @Override
         protected void onPostExecute(String result) {
+            bar.setVisibility(View.GONE);
             super.onPostExecute(result);
             tvTextParse.setText(result);
         }
