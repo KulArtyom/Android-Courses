@@ -30,7 +30,6 @@ public class MyArrayAdapter extends ArrayAdapter {
 
 
     static class ViewHolder {
-
         private ImageView imageView;
         private TextView textView;
 
@@ -38,6 +37,7 @@ public class MyArrayAdapter extends ArrayAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+
         // ViewHolder буферизирует оценку различных полей шаблона элемента
         ViewHolder holder;
         // Очищает сущетсвующий шаблон, если параметр задан

@@ -14,6 +14,7 @@ import com.kulart05gmail.lesson_1.Lessons.Lesson_3.Lesson_3;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_4.Lesson_4;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_4.Lesson_4_1;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_4.Lesson_4_3;
+import com.kulart05gmail.lesson_1.Lessons.Lesson_5.Lesson_5;
 
 public class ListLessons extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -65,7 +66,10 @@ public class ListLessons extends AppCompatActivity implements AdapterView.OnItem
                 Intent lesson_4_1 = new Intent(this, Lesson_4_3.class);
                 startActivity(lesson_4_1);
                 break;
-
+            case 5:
+                Intent lesson_5 = new Intent(this, Lesson_5.class);
+                startActivity(lesson_5);
+                break;
         }
     }
 }

@@ -12,6 +12,8 @@ import android.widget.ListView;
 import com.kulart05gmail.lesson_1.HomeWorks.Homework_2;
 import com.kulart05gmail.lesson_1.HomeWorks.Homework_3;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_1.Lesson_1;
+import com.kulart05gmail.lesson_1.Lessons.Lesson_4.Lesson_4_1;
+import com.kulart05gmail.lesson_1.Lessons.Lesson_4.Lesson_4_3;
 
 
 /**
@@ -60,9 +62,9 @@ public class ListHomeworks extends Activity implements AdapterView.OnItemClickLi
                 startActivity(homework3);
                 break;
             case 3:
-
-
-
+                Intent homework_4 = new Intent(this, Lesson_4_3.class);
+                startActivity(homework_4);
+                break;
         }
     }
 }

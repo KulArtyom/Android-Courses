@@ -56,7 +56,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ListOther"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Lessons.Lesson_5.Lesson_5"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
