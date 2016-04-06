@@ -9,10 +9,11 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.kulart05gmail.lesson_1.HomeWorks.Homework_2;
-import com.kulart05gmail.lesson_1.HomeWorks.Homework_3;
+import com.kulart05gmail.lesson_1.HomeWorks.Homework_2.Homework_2;
+import com.kulart05gmail.lesson_1.HomeWorks.Homework_3.Homework_3;
+import com.kulart05gmail.lesson_1.HomeWorks.Homework_5.Homework_5_1.helper.MainActivity;
+import com.kulart05gmail.lesson_1.HomeWorks.Homework_5.Homework_5_2.RecyclerViewActivity;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_1.Lesson_1;
-import com.kulart05gmail.lesson_1.Lessons.Lesson_4.Lesson_4_1;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_4.Lesson_4_3;
 
 
@@ -27,7 +28,7 @@ public class ListHomeworks extends Activity implements AdapterView.OnItemClickLi
         setContentView(R.layout.list_homeworks);
 
 
-        String[] homeworks = {"Homework 1", "Homework 2", "Homework 3", "Homework 4", "Homework 5", "Homework 6", "Homework 7"
+        String[] homeworks = {"Homework 1", "Homework 2", "Homework 3", "Homework 4", "Homework 5_1", "Homework 5_2", "Homework 7"
                 , "Homework3", "Homework3", "Homework3", "Homework3", "Homework3", "Homework3"};
 
 
@@ -64,6 +65,14 @@ public class ListHomeworks extends Activity implements AdapterView.OnItemClickLi
             case 3:
                 Intent homework_4 = new Intent(this, Lesson_4_3.class);
                 startActivity(homework_4);
+                break;
+            case 4:
+                Intent homework_5_1 = new Intent(this, MainActivity.class);
+                startActivity(homework_5_1);
+                break;
+            case 5:
+                Intent homework_5_2 = new Intent(this, RecyclerViewActivity.class);
+                startActivity(homework_5_2);
                 break;
         }
     }

@@ -5,4 +5,31 @@
     <string name="title_activity_lesson2">Lesson2</string>
     <string name="title_activity_homework_2">Homework_2</string>
     <string name="title_activity_lesson_3">Lesson_3</string>
+    <string name="title_activity_quiz">GeoQuiz</string>
+    <string name="true_btn">True</string>
+    <string name="correct_toast">Correct!</string>
+    <string name="wrongg_toast">Wrong!</string>
+    <string name="false_btn">False</string>
+    <string name="tv_quiz_text">Constantinople is the largest city in Turkey.</string>
+    <string name="title_activity_homework_5">Homework_5</string>
+    <string name="title_activity_homework_5_2">Homework_5_2</string>
+
+    <array name="main_items">
+        <item>List - Basic Drag and Swipe</item>
+        <item>Grid - Basic Swipe</item>
+    </array>
+
+    <array name="dummy_items">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+        <item>Six</item>
+        <item>Seven</item>
+        <item>Eight</item>
+        <item>Nine</item>
+        <item>Ten</item>
+    </array>
+    <string name="title_activity_lesson_6">Lesson_6</string>
 </resources>

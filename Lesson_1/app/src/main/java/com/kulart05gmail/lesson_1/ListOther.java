@@ -1,6 +1,7 @@
 package com.kulart05gmail.lesson_1;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.kulart05gmail.lesson_1.Other.GeoQuiz.QuizActivity;
 import com.kulart05gmail.lesson_1.R;
 
 import java.util.ArrayList;
@@ -22,7 +24,7 @@ public class ListOther extends Activity implements AdapterView.OnItemClickListen
         ListView lvOther = (ListView) findViewById(R.id.lv_other);
 
         ArrayList<String> other = new ArrayList<>();
-        other.add("Item 1");
+        other.add("GeoQuiz");
         other.add("Item 2");
         other.add("Item 3");
         other.add("Item 4");
@@ -48,6 +50,8 @@ public class ListOther extends Activity implements AdapterView.OnItemClickListen
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         switch (position) {
             case 0:
+                Intent GeoQuiz = new Intent(this, QuizActivity.class);
+                startActivity(GeoQuiz);
                 break;
         }
     }

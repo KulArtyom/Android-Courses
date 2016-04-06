@@ -1,1 +1,3 @@
 include ':app'
+//уводит gradle в офлайн режим
+//startParameter.offline=true

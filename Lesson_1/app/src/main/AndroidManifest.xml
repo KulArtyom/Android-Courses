@@ -31,7 +31,7 @@
             android:name=".ListHomeworks"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".HomeWorks.Homework_2"
+            android:name=".HomeWorks.Homework_2.Homework_2"
             android:label="@string/title_activity_homework_2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -43,7 +43,7 @@
             android:label="@string/title_activity_lesson_3"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".HomeWorks.Homework_3"
+            android:name=".HomeWorks.Homework_3.Homework_3"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Lessons.Lesson_4.Lesson_4"
@@ -60,6 +60,30 @@
         <activity
             android:name=".Lessons.Lesson_5.Lesson_5"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Other.GeoQuiz.QuizActivity"
+            android:label="@string/title_activity_quiz" />
+        <activity
+            android:name=".HomeWorks.Homework_5.Homework_5_1.helper.MainActivity"
+            android:label="@string/title_activity_homework_5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeWorks.Homework_5.Homework_5_2.RecyclerViewActivity"
+            android:label="@string/title_activity_homework_5_2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".HomeWorks.Homework_5.Homework_5_2.CardViewActivity" />
+        <activity
+            android:name=".Lessons.Lesson_6.Lesson_6"
+            android:label="@string/title_activity_lesson_6"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name=".Lessons.Lesson_6.MBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+
+
     </application>
 
 </manifest>

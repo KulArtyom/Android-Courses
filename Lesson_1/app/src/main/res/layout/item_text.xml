@@ -11,7 +11,7 @@
         android:layout_width="30dp"
         android:layout_height="match_parent"
         android:layout_gravity="left"
-        android:src="@drawable/ic_bluet" />
+        android:src="@drawable/ic_directions_subway_24dp" />
 
     <TextView
         android:id="@+id/tvText"
@@ -20,7 +20,12 @@
         android:layout_gravity="left"
         android:gravity="left|center"
         android:text="Text"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:textSize="20dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey">
+    </View>
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.kulart05gmail.lesson_1.HomeWorks;
+package com.kulart05gmail.lesson_1.HomeWorks.Homework_3;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

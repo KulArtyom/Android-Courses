@@ -1,4 +1,4 @@
-package com.kulart05gmail.lesson_1.HomeWorks;
+package com.kulart05gmail.lesson_1.HomeWorks.Homework_2;
 
 import android.app.Activity;
 import android.media.MediaActionSound;
