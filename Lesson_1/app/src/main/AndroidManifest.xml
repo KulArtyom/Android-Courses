@@ -83,7 +83,10 @@
             </intent-filter>
         </receiver>
 
-
+        <activity
+            android:name=".Lessons.Lesson_6.Lesson_6_1.Lesson_6_1"
+            android:label="@string/title_activity_lesson_6_1"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

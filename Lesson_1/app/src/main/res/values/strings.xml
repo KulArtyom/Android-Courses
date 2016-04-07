@@ -10,7 +10,6 @@
     <string name="correct_toast">Correct!</string>
     <string name="wrongg_toast">Wrong!</string>
     <string name="false_btn">False</string>
-    <string name="tv_quiz_text">Constantinople is the largest city in Turkey.</string>
     <string name="title_activity_homework_5">Homework_5</string>
     <string name="title_activity_homework_5_2">Homework_5_2</string>
 
@@ -32,4 +31,27 @@
         <item>Ten</item>
     </array>
     <string name="title_activity_lesson_6">Lesson_6</string>
+
+    <array name="lesson">
+        <item>Lesson 1</item>
+        <item>Lesson 2</item>
+        <item>Lesson 3</item>
+        <item>Lesson 4</item>
+        <item>Lesson 4.1</item>
+        <item>Lesson 5</item>
+        <item>Lesson 6</item>
+        <item>Lesson 6.1</item>
+        <item>Lesson 8</item>
+        <item>Lesson 9</item>
+        <item>Lesson 10</item>
+    </array>
+    <string name="title_activity_lesson_6_1">Lesson_6_1</string>
+
+    //GeoQuiz
+    <string name="question_oceans">The Pacific Ocean is larger than the Atlantic Ocean.</string>
+    <string name="question_mideast">The Suez Canal connects the Red Sea and the Indian Ocean.</string>
+    <string name="question_africa">The source of the Nile River is in Egypt</string>
+    <string name="question_americas">The Amazon River is the longest river in the Americas.</string>
+    <string name="question_asia">Lake Baikal is the world\’s oldest and deepest freshwater lake.</string>
+
 </resources>

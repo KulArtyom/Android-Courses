@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,7 +22,19 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button mButtonnTrue;
     private Button mButtonnFalse;
+    private ImageButton mBtnNext;
+    private ImageButton mBtnBack;
     private TextView mTextView;
+
+    private Question[] mQuestionBank = new Question[]{
+            new Question(R.string.question_oceans, true),
+            new Question(R.string.question_mideast, false),
+            new Question(R.string.question_africa, false),
+            new Question(R.string.question_americas, true),
+            new Question(R.string.question_asia, true),
+    };
+
+    private int mCurrentIndex = 0;
 
 
     @Override
@@ -31,11 +44,53 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
         mButtonnFalse = (Button) findViewById(R.id.btn_false);
         mButtonnTrue = (Button) findViewById(R.id.btn_true);
-        mTextView = (TextView)findViewById(R.id.tv_text);
+        mBtnNext = (ImageButton) findViewById(R.id.btn_next);
+        mBtnBack = (ImageButton) findViewById(R.id.btn_back);
+        mTextView = (TextView) findViewById(R.id.tv_text);
+
+
+        int question = mQuestionBank[mCurrentIndex].getmTextResId();
+        mTextView.setText(question);
+        mTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
+                upDateQuestion();
+
+            }
+        });
 
         mButtonnTrue.setOnClickListener(this);
         mButtonnFalse.setOnClickListener(this);
+        mBtnBack.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                try {
+                    mCurrentIndex = (mCurrentIndex - 1) % mQuestionBank.length;
+                    upDateQuestion();
+                } catch (ArrayIndexOutOfBoundsException e) {
+                    Toast.makeText(QuizActivity.this, "Null", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
+        mBtnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                        mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
+                        upDateQuestion();
+
+                } catch (ArrayIndexOutOfBoundsException e) {
+                    Toast.makeText(QuizActivity.this, "Null", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
+
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -56,12 +111,38 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_true:
-                Toast.makeText(this, R.string.correct_toast, Toast.LENGTH_SHORT).show();
+                checkAnswer(true);
+                break;
+            case R.id.btn_false:
+                checkAnswer(false);
                 break;
 
-            case R.id.btn_false:
-                Toast.makeText(this, R.string.wrongg_toast, Toast.LENGTH_SHORT).show();
-                break;
         }
     }
+
+    //метод обновления вопроса
+    private void upDateQuestion() {
+        int question = mQuestionBank[mCurrentIndex].getmTextResId();
+        mTextView.setText(question);
+    }
+
+    //метод выбора правильного ответа
+    private void checkAnswer(boolean userPressedTrue) {
+        try {
+            boolean answerIsTrue = mQuestionBank[mCurrentIndex].ismAnswerTrue();
+            int messageResId = 0;
+            if (userPressedTrue == answerIsTrue) {
+                messageResId = R.string.correct_toast;
+            } else {
+                messageResId = R.string.wrongg_toast;
+            }
+            Toast.makeText(this, messageResId, Toast.LENGTH_SHORT)
+                    .show();
+        } catch (ArrayIndexOutOfBoundsException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
 }

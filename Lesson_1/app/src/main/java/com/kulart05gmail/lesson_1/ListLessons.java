@@ -16,6 +16,7 @@ import com.kulart05gmail.lesson_1.Lessons.Lesson_4.Lesson_4_1;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_4.Lesson_4_3;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_5.Lesson_5;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_6.Lesson_6;
+import com.kulart05gmail.lesson_1.Lessons.Lesson_6.Lesson_6_1.Lesson_6_1;
 
 public class ListLessons extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -25,9 +26,7 @@ public class ListLessons extends AppCompatActivity implements AdapterView.OnItem
         setContentView(R.layout.list_lessons);
 
 
-        String[] lessons = {"Lesson 1", "Lesson 2", "Lesson 3", "Lesson 4", "Lesson 4.1", "Lesson 5",
-                "Lesson 6", "Lesson 7", "Lesson 8", "Lesson 9", "Lesson 10"};
-
+        String[] lessons = getResources().getStringArray(R.array.lesson);
 
         // находим список
         ListView lvLS = (ListView) findViewById(R.id.lvLessons);
@@ -74,6 +73,10 @@ public class ListLessons extends AppCompatActivity implements AdapterView.OnItem
             case 6:
                 Intent lesson_6 = new Intent(this, Lesson_6.class);
                 startActivity(lesson_6);
+                break;
+            case 7:
+                Intent lesson_6_1 = new Intent(this, Lesson_6_1.class);
+                startActivity(lesson_6_1);
                 break;
         }
     }
