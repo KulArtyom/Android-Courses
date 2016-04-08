@@ -9,5 +9,6 @@
     <color name="grey">#8b8b8b</color>
     <color name="light_blu">#72b0df</color>
     <color name="yellow">#eaed08</color>
-    <color name="new_bg">#29420071</color>
+    <color name="new_bg">#c7512a6c</color>
+    <color name="light_brown">#9ef49f43</color>
 </resources>

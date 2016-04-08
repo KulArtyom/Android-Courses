@@ -62,7 +62,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Other.GeoQuiz.QuizActivity"
-            android:label="@string/title_activity_quiz" />
+            android:label="@string/title_activity_quiz"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".HomeWorks.Homework_5.Homework_5_1.helper.MainActivity"
             android:label="@string/title_activity_homework_5"
@@ -86,6 +87,18 @@
         <activity
             android:name=".Lessons.Lesson_6.Lesson_6_1.Lesson_6_1"
             android:label="@string/title_activity_lesson_6_1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeWorks.Homework_6.Homework_6"
+            android:label="@string/title_activity_homework_6"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeWorks.Homework_6.Homework_6_1"
+            android:label="@string/title_activity_homework_6_1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeWorks.Homework_6.Homework_6_3"
+            android:label="@string/title_activity_homework_6_3"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
