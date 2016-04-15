@@ -14,9 +14,12 @@ import com.kulart05gmail.lesson_1.HomeWorks.Homework_3.Homework_3;
 import com.kulart05gmail.lesson_1.HomeWorks.Homework_5.Homework_5_1.helper.MainActivity;
 import com.kulart05gmail.lesson_1.HomeWorks.Homework_5.Homework_5_2.RecyclerViewActivity;
 import com.kulart05gmail.lesson_1.HomeWorks.Homework_6.Homework_6;
-import com.kulart05gmail.lesson_1.HomeWorks.Homework_6.Homework_6_3;
+import com.kulart05gmail.lesson_1.HomeWorks.Homework_6.Homework_6_2;
+import com.kulart05gmail.lesson_1.HomeWorks.Homework_7.Homework_7;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_1.Lesson_1;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_4.Lesson_4_3;
+
+import java.util.ArrayList;
 
 
 /**
@@ -30,8 +33,7 @@ public class ListHomeworks extends Activity implements AdapterView.OnItemClickLi
         setContentView(R.layout.list_homeworks);
 
 
-        String[] homeworks = {"Homework 1", "Homework 2", "Homework 3", "Homework 4", "Homework 5.1", "Homework 5.2", "Homework 6"
-                , "Homework 6.1", "Homework 8", "Homework 9", "Homework 10", "Homework 11", "Homework 12"};
+        String[] homeworks = getResources().getStringArray(R.array.homeworks);
 
 
         // находим список
@@ -81,8 +83,12 @@ public class ListHomeworks extends Activity implements AdapterView.OnItemClickLi
                 startActivity(homework_6);
                 break;
             case 7:
-                Intent homewwork_6_1 = new Intent(this, Homework_6_3.class);
+                Intent homewwork_6_1 = new Intent(this, Homework_6_2.class);
                 startActivity(homewwork_6_1);
+                break;
+            case 8:
+                Intent homework_7 = new Intent(this, Homework_7.class);
+                startActivity(homework_7);
                 break;
         }
     }

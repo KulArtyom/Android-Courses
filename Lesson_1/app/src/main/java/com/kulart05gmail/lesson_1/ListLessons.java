@@ -12,11 +12,12 @@ import com.kulart05gmail.lesson_1.Lessons.Lesson_2.Lesson_2;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_1.Lesson_1;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_3.Lesson_3;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_4.Lesson_4;
-import com.kulart05gmail.lesson_1.Lessons.Lesson_4.Lesson_4_1;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_4.Lesson_4_3;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_5.Lesson_5;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_6.Lesson_6;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_6.Lesson_6_1.Lesson_6_1;
+import com.kulart05gmail.lesson_1.Lessons.Lesson_7.Lesson_7;
+import com.kulart05gmail.lesson_1.Lessons.Lesson_8.ui.activities.Lesson_8;
 
 public class ListLessons extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -77,6 +78,14 @@ public class ListLessons extends AppCompatActivity implements AdapterView.OnItem
             case 7:
                 Intent lesson_6_1 = new Intent(this, Lesson_6_1.class);
                 startActivity(lesson_6_1);
+                break;
+            case 8:
+                Intent lesson_7 = new Intent(this, Lesson_7.class);
+                startActivity(lesson_7);
+                break;
+            case 9:
+                Intent lesson_8 = new Intent(this, Lesson_8.class);
+                startActivity(lesson_8);
                 break;
         }
     }

@@ -10,14 +10,14 @@
         android:id="@+id/btnLessons"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:background="@drawable/rounded_button"
-        android:text="Lessons"
-        android:textColor="@android:color/white"
-        android:layout_alignParentTop="true"
         android:layout_alignLeft="@+id/btnHomeworks"
+        android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/btnHomeworks"
         android:layout_marginTop="33dp"
-        android:textAllCaps="false"/>
+        android:background="@drawable/btn_selector"
+        android:text="Lessons"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/btnHomeworks"
@@ -26,21 +26,34 @@
         android:layout_below="@+id/btnLessons"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="38dp"
-        android:background="@drawable/rounded_button"
+        android:background="@drawable/btn_selector"
         android:text="HomeWorks"
-        android:textColor="@android:color/white"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/btn_other"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:background="@drawable/rounded_button"
-        android:text="Other"
-        android:textColor="@android:color/white"
-        android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/btnHomeworks"
+        android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/btnHomeworks"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_selector"
+        android:text="Other"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_start_android"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/btn_other"
+        android:layout_centerHorizontal="true"
+        android:text="Startandroid"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_selector"
+        android:textColor="@android:color/white"
         android:textAllCaps="false"/>
 
 </RelativeLayout>

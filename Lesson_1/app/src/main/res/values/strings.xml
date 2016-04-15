@@ -41,10 +41,42 @@
         <item>Lesson 5</item>
         <item>Lesson 6</item>
         <item>Lesson 6.1</item>
+        <item>Lesson 7</item>
         <item>Lesson 8</item>
         <item>Lesson 9</item>
         <item>Lesson 10</item>
+        <item>Lesson 11</item>
+        <item>Lesson 12</item>
+        <item>Lesson 13</item>
+        <item>Lesson 14</item>
+        <item>Lesson 15</item>
+        <item>Lesson 16</item>
+        <item>Lesson 17</item>
     </array>
+
+    <array name="homeworks">
+        <item>Homeworks 1</item>
+        <item>Homeworks 2</item>
+        <item>Homeworks 3</item>
+        <item>Homeworks 4</item>
+        <item>Homeworks 5.1</item>
+        <item>Homeworks 5.2</item>
+        <item>Homeworks 6</item>
+        <item>Homeworks 6.1</item>
+        <item>Homeworks 7</item>
+        <item>Homeworks 8</item>
+        <item>Homeworks 9</item>
+        <item>Homeworks 10</item>
+        <item>Homeworks 11</item>
+        <item>Homeworks 12</item>
+        <item>Homeworks 13</item>
+        <item>Homeworks 14</item>
+        <item>Homeworks 15</item>
+        <item>Homeworks 16</item>
+        <item>Homeworks 17</item>
+    </array>
+
+
     <string name="title_activity_lesson_6_1">Lesson_6_1</string>
 
     //GeoQuiz
@@ -56,5 +88,10 @@
     <string name="title_activity_homework_6">Homework_6</string>
     <string name="title_activity_homework_6_1">Homework_6_1</string>
     <string name="title_activity_homework_6_3">Homework_6_3</string>
+    <string name="title_activity_lesson_7">Lesson_7</string>
+    <string name="title_activity_homework_8">Homework_8</string>
+    <string name="title_activity_lesson_8">Lesson_8</string>
+    <string name="title_activity_list_start_android">ListStartAndroid</string>
+    <string name="title_activity_simple_cursor_adapter">SimpleCursorAdapter</string>
 
 </resources>

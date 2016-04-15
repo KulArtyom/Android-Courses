@@ -14,6 +14,7 @@ public class Main extends Activity implements View.OnClickListener {
     private Button btnLessons;
     private Button btnHomeWorks;
     private Button btnOther;
+    private Button btnStartAndroid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +24,12 @@ public class Main extends Activity implements View.OnClickListener {
         btnLessons = (Button) findViewById(R.id.btnLessons);
         btnHomeWorks = (Button) findViewById(R.id.btnHomeworks);
         btnOther = (Button) findViewById(R.id.btn_other);
+        btnStartAndroid = (Button) findViewById(R.id.btn_start_android);
 
         btnHomeWorks.setOnClickListener(this);
         btnLessons.setOnClickListener(this);
         btnOther.setOnClickListener(this);
+        btnStartAndroid.setOnClickListener(this);
     }
 
     @Override
@@ -43,6 +46,10 @@ public class Main extends Activity implements View.OnClickListener {
             case R.id.btn_other:
                 Intent other = new Intent(this, ListOther.class);
                 startActivity(other);
+                break;
+            case R.id.btn_start_android:
+                Intent startandroid = new Intent(this, ListStartAndroid.class);
+                startActivity(startandroid);
                 break;
         }
     }

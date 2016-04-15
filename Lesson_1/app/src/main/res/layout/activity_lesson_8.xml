@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blu"
+    android:fitsSystemWindows="true"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/btn_rest"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rounded_button"
+        android:text="New Button"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/ed_t"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_rest"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/ed_t1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ed_t"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:gravity="end"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
