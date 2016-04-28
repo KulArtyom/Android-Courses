@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lesson">
+        <item>Lesson 11</item>
+        <item>Lesson 12</item>
+        <item>Lesson 13</item>
+        <item>Lesson 14</item>
+        <item>Lesson 15</item>
+        <item>Lesson 16</item>
+        <item>Lesson 17</item>
+        <item>Lesson 18</item>
+        <item>Lesson 19</item>
+        <item>Lesson 20</item>
+        <item>Lesson 21</item>
+        <item>Lesson 22</item>
+        <item>Lesson 23</item>
+        <item>Lesson 24</item>
+       </string-array>
+</resources>
