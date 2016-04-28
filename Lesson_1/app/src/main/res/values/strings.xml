@@ -64,16 +64,10 @@
         <item>Homeworks 6</item>
         <item>Homeworks 6.1</item>
         <item>Homeworks 7</item>
-        <item>Homeworks 8</item>
-        <item>Homeworks 9</item>
         <item>Homeworks 10</item>
-        <item>Homeworks 11</item>
-        <item>Homeworks 12</item>
-        <item>Homeworks 13</item>
-        <item>Homeworks 14</item>
-        <item>Homeworks 15</item>
-        <item>Homeworks 16</item>
-        <item>Homeworks 17</item>
+        <item>Homeworks 10.1</item>
+        <item>Homeworks 10.2</item>
+
     </array>
 
 
@@ -93,5 +87,46 @@
     <string name="title_activity_lesson_8">Lesson_8</string>
     <string name="title_activity_list_start_android">ListStartAndroid</string>
     <string name="title_activity_simple_cursor_adapter">SimpleCursorAdapter</string>
+    <string name="title_activity_homework_10">Homework_10</string>
+    <string name="dialog_rate_ok"> Rate_ok</string>
+    <string name="dialog_rate_cancel">Rate cancel</string>
+    <string name="dialog_rate_buy">Rate buy</string>
+    <string name="dialog_settings_title">Settings</string>
+    <string name="title_activity_homework_10_2">Homework_10_2</string>
+
+
+    //homework_10.1
+    <string name="lbl_you_are_at">YOU ARE AT</string>
+    <string name="btn_get_location">GET MY LOCATION</string>
+    <string name="btn_start_updates_location">START LOCATION UPDATES</string>
+    <string name="btn_stop_updates_location">STOP LOCATION UPDATES</string>
+
+    <string name="register_homework_8">регистрация</string>
+    <string name="login_homework_8">вход</string>
+    <string name="name_homework_8">name</string>
+    <string name="login_eng_homework_8">login</string>
+    <string name="password_eng_homework_8">password</string>
+    <string name="ok_homework_8">все супер</string>
+    <string name="failed_homework_8">ошибка</string>
+
+
+    <string name="login_text">Login Page</string>
+    <string name="username_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="edittext_user">User email</string>
+    <string name="edittext_pass">Pass</string>
+    <string name="login_button">Login</string>
+    <string name="attempts_text">Attempts remains :</string>
+    <string name="user_button">Registration</string>
+    <string name="welcome_text">Registration</string>
+    <string name="register_button">Registration</string>
+    <string name="success">Successfully Connected</string>
+    <string name="reg_name">Username</string>
+    <string name="reg_email">Email</string>
+    <string name="reg_pass">Password</string>
+
+
+
+
 
 </resources>

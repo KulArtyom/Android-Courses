@@ -1,8 +1,8 @@
 package com.kulart05gmail.lesson_1.Lessons.Lesson_8.network.api;
 
 
-import com.kulart05gmail.lesson_1.Lessons.Lesson_8.Models.LoginRequest;
-import com.kulart05gmail.lesson_1.Lessons.Lesson_8.Models.Users;
+import com.kulart05gmail.lesson_1.Lessons.Lesson_8.events.LoginRequest;
+import com.kulart05gmail.lesson_1.Lessons.Lesson_8.models.Users;
 
 import retrofit2.Call;
 import retrofit2.http.Body;

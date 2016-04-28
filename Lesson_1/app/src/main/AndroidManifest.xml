@@ -2,15 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kulart05gmail.lesson_1">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
-        android:name=".Lessons.Lesson_8.MyApplication"
+        android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        >
         <activity
             android:name=".Main"
             android:label="@string/app_name"
@@ -132,7 +136,62 @@
         <activity
             android:name=".StartAndroid.Lesson_52_SimpleCursorAdapter.SimpleCursorAdapter"
             android:label="@string/title_activity_simple_cursor_adapter"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeWorks.Homework_8.Homework_8"
+            android:label="@string/title_activity_homework_8"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeWorks.Homework_10.Homework_10_1.Homework_10"
+            android:label="@string/title_activity_homework_10"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeWorks.Homework_10.Homework_10_2.Homework_10_2"
+            android:label="@string/title_activity_homework_10_2"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+
+        </activity>
+
+        <activity
+            android:name=".HomeWorks.Homework_10.Homework_10_3.activities.ChangeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".HomeWorks.Homework_10.Homework_10_3.activities.LogRegActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".HomeWorks.Homework_10.Homework_10_3.activities.ResultActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".HomeWorks.Homework_10.Homework_10_3.activities.StartActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"
+            />
+
+        <activity android:name=".HomeWorks.Homework_10.Homework_10_4.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".HomeWorks.Homework_10.Homework_10_4.UserActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <service android:name=".HomeWorks.Homework_10.Homework_10_4.MyService"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".HomeWorks.Homework_10.Homework_10_4.ConnectedActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+
     </application>
+
 
 </manifest>

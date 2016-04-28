@@ -9,6 +9,9 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.kulart05gmail.lesson_1.HomeWorks.Homework_10.Homework_10_1.Homework_10;
+import com.kulart05gmail.lesson_1.HomeWorks.Homework_10.Homework_10_2.Homework_10_2;
+import com.kulart05gmail.lesson_1.HomeWorks.Homework_10.Homework_10_4.UserActivity;
 import com.kulart05gmail.lesson_1.HomeWorks.Homework_2.Homework_2;
 import com.kulart05gmail.lesson_1.HomeWorks.Homework_3.Homework_3;
 import com.kulart05gmail.lesson_1.HomeWorks.Homework_5.Homework_5_1.helper.MainActivity;
@@ -18,8 +21,6 @@ import com.kulart05gmail.lesson_1.HomeWorks.Homework_6.Homework_6_2;
 import com.kulart05gmail.lesson_1.HomeWorks.Homework_7.Homework_7;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_1.Lesson_1;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_4.Lesson_4_3;
-
-import java.util.ArrayList;
 
 
 /**
@@ -90,6 +91,19 @@ public class ListHomeworks extends Activity implements AdapterView.OnItemClickLi
                 Intent homework_7 = new Intent(this, Homework_7.class);
                 startActivity(homework_7);
                 break;
+            case 9:
+                Intent homework_10 = new Intent(this, Homework_10.class);
+                startActivity(homework_10);
+                break;
+            case 10:
+                Intent homework_10_1 = new Intent(this, Homework_10_2.class);
+                startActivity(homework_10_1);
+                break;
+            case 11:
+                Intent homework_10_4 = new Intent(this, UserActivity.class);
+                startActivity(homework_10_4);
+                break;
+
         }
     }
 }

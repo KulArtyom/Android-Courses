@@ -4,8 +4,8 @@ import android.app.Application;
 import android.util.Log;
 
 import com.facebook.stetho.Stetho;
+import com.kulart05gmail.lesson_1.Lessons.Lesson_8.network.ServiceBroker;
 import com.squareup.leakcanary.LeakCanary;
-
 
 
 /**
@@ -15,7 +15,7 @@ public class MyApplication extends Application {
 
     private static MyApplication myApplication;
 
-    public MyApplication getInstance() {
+    public static MyApplication getInstance() {
         return myApplication;
     }
 
@@ -27,6 +27,7 @@ public class MyApplication extends Application {
         LeakCanary.install(this);
 
         myApplication = this;
+        ServiceBroker.getInstance();
         Log.d("MyApplication", "OnCreate");
     }
 

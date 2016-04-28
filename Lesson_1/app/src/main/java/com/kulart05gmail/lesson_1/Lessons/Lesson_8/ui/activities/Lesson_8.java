@@ -8,10 +8,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.kulart05gmail.lesson_1.Lessons.Lesson_8.Models.LoginRequest;
+import com.kulart05gmail.lesson_1.Lessons.Lesson_8.events.LoginResponse;
+import com.kulart05gmail.lesson_1.Lessons.Lesson_8.helpers.BusProvider;
+import com.kulart05gmail.lesson_1.Lessons.Lesson_8.events.LoginRequest;
 import com.kulart05gmail.lesson_1.Lessons.Lesson_8.network.listeners.LoginCallback;
-import com.kulart05gmail.lesson_1.Lessons.Lesson_8.ServiceBroker;
+import com.kulart05gmail.lesson_1.Lessons.Lesson_8.network.ServiceBroker;
 import com.kulart05gmail.lesson_1.R;
+import com.squareup.otto.Bus;
+import com.squareup.otto.Subscribe;
 
 public class Lesson_8 extends AppCompatActivity {
 
@@ -43,20 +47,46 @@ public class Lesson_8 extends AppCompatActivity {
                 LoginRequest loginRequest = new LoginRequest(
                         String.valueOf(mLoginEditText.getText()),
                         String.valueOf(mPasswordEditText.getText()));
+                BusProvider.getInstance().post(loginRequest);
 
-                // тут можно запустить ProgressBar
-                ServiceBroker.getInstance().login(loginRequest, new LoginCallback() {
-                    @Override
-                    public void response(boolean isError) {
-                        // а тут остановить ProgressBar
-                        if (isError) {
-                            mTextview.setText("Ошибка");
-                        } else {
-                            mTextview.setText("Все супер");
-                        }
-                    }
-                });
+//                // тут можно запустить ProgressBar
+//                ServiceBroker.getInstance().login(loginRequest, new LoginCallback() {
+//                    @Override
+//                    public void response(boolean isError) {
+//                        // а тут остановить ProgressBar
+//                        if (isError) {
+//                            mTextview.setText("Ошибка");
+//                        } else {
+//                            mTextview.setText("Все супер");
+//                        }
+//                    }
+//                });
+//            }
+//        });
             }
         });
+    }
+
+    @Subscribe
+    public void onLoginResponse(LoginResponse response) {
+
+        if (response.isError()) {
+            mTextview.setText("Ошибка");
+        } else {
+            mTextview.setText("Все супер");
+        }
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        BusProvider.getInstance().register(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        BusProvider.getInstance().unregister(this);
     }
 }

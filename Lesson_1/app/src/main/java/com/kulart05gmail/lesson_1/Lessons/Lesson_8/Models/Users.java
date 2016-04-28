@@ -1,4 +1,4 @@
-package com.kulart05gmail.lesson_1.Lessons.Lesson_8.Models;
+package com.kulart05gmail.lesson_1.Lessons.Lesson_8.models;
 
 import com.google.gson.annotations.SerializedName;
 

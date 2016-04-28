@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    android:padding="@dimen/layout_dimen_10dp">
+
+    <Button
+        android:id="@+id/btn_lessons"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_selector"
+        android:text="@string/btn_lessons"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btn_homeworks"
+        android:layout_alignStart="@+id/btn_homeworks"/>
+
+    <Button
+        android:id="@+id/btn_homeworks"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_lessons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/btn_selector"
+        android:text="@string/btn_homewworks"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+
+
+
+</RelativeLayout>
