@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="homeworks">
-        <item>Homework 11</item>
         <item>Homework 12</item>
+        <item>Homework 12.1</item>
         <item>Homework 13</item>
         <item>Homework 14</item>
         <item>Homework 15</item>

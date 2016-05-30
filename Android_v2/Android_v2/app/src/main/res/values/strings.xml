@@ -2,4 +2,27 @@
     <string name="app_name">Android_v2</string>
     <string name="btn_lessons">Lessons</string>
     <string name="btn_homewworks">Homeworks</string>
+    <string name="title_activity_lesson_11">Lesson_11</string>
+    <string name="btn_save">Save</string>
+    <string name="enter_surname">Enter surname</string>
+    <string name="title_activity_lesson_12">Lesson_12</string>
+    <string name="title_activity_lesson_12_1">Lesson_12_1</string>
+    <string name="title_activity_homework_13">Homework_13</string>
+    <string name="title_activity_lesson_13">Lesson_13</string>
+    <string name="title_activity_homework_14">Homework_14</string>
+    <string name="title_activity_lesson_15_1">Lesson_15_1</string>
+
+    <string name="new_message_notification_title_template">TennisScore: %1$s</string>
+
+    <!-- TODO: remove this placeholder text -->
+    <string name="new_message_notification_placeholder_text_template"> %1$s
+
+    </string>
+
+    <string name="action_share">Share</string>
+    <string name="action_reply">Reply</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_homework_17">Homework_17</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="150dp"
+    android:background="#09C"
+    android:padding="@dimen/widget_margin">
+    <Button
+        android:id="@+id/btnWIFI"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:text="WI-FI"
+        android:layout_alignLeft="@+id/appwidget_text"
+        android:layout_alignStart="@+id/appwidget_text" />
+    <TextView
+        android:id="@+id/appwidget_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+        android:background="#09C"
+        android:contentDescription="@string/appwidget_text"
+        android:text="@string/appwidget_text"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:text="Next"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/appwidget_text"
+        android:layout_alignLeft="@+id/appwidget_text"
+        android:layout_alignStart="@+id/appwidget_text" />
+
+</RelativeLayout>

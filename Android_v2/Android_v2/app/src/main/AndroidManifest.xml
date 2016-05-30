@@ -2,15 +2,32 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kulart05gmail.android_v2">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <meta-data
+        android:name="com.google.android.gms.vision.DEPENDECIES"
+        android:value="face" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-
+        android:theme="@style/AppTheme"
+        android:name="android.support.multidex.MultiDexApplication">
         <activity
-            android:name=".MainActivity"
+            android:name=".Main"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,13 +35,84 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ListLessons"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ListHomeworks"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Lessons.Lesson_11_DataBase.Lesson_11"
+            android:label="@string/title_activity_lesson_11"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Lessons.Lesson_12.Lesson_12_2.Lesson_12"
+            android:label="@string/title_activity_lesson_12"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Lessons.Lesson_12.Lesson_12_1.Lesson_12_1"
+            android:label="@string/title_activity_lesson_12_1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Homeworks.Homework_12.Homework_12"
+            android:label="@string/title_activity_homework_13"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Lessons.Lesson_13.activity.Lesson_13"
+            android:label="@string/title_activity_lesson_13"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Homeworks.Homework_14.Homework_14"
+            android:label="@string/title_activity_homework_14"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Lessons.Lesson_15.Lesson_15" />
+        <activity
+            android:name=".Lessons.Lesson_15.Lesson_15_1"
+            android:label="@string/title_activity_lesson_15_1"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Lessons.Lesson_16.Lesson_16" />
+        <activity android:name=".Lessons.Lesson_17.Lesson_17" />
+
+        <receiver android:name=".Lessons.Lesson_17.NewAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/new_app_widget_info" />
+        </receiver>
+        <receiver android:name=".Homeworks.Homework_17.WifiButtonWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/wifi_button_widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".Homeworks.Homework_17.Homework_17"
+            android:label="@string/title_activity_homework_17"
+            android:theme="@style/AppTheme" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Lessons.Lesson_18.MapsActivity"
+            android:label="@string/title_activity_maps"
+
+            />
 
     </application>
 

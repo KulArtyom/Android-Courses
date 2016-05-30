@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.kulart05gmail.android_v2.Lessons.Lesson_13.activity.Lesson_13">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+        <!--fitsSystemWindows -все что будет
+        располагаться в rl будет растяннуто на весь экран-->
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/abl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:gravity="center"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <!--<ImageButton-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/ic_radio_button_checked_black_24dp"-->
+
+                    <!--/>-->
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_gravity="center"
+                    android:text="Title toolbar"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:layout_marginTop="60dp"
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+        </FrameLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

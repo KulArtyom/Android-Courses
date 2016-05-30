@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class Main extends AppCompatActivity {
 
     private Button btnLessons;
     private Button btnHomeworks;
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         btnLessons.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent lessons = new Intent(MainActivity.this, ListLessons.class);
+                Intent lessons = new Intent(Main.this, ListLessons.class);
                 startActivity(lessons);
             }
         });
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         btnHomeworks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent homeworks = new Intent(MainActivity.this, ListHomeworks.class);
+                Intent homeworks = new Intent(Main.this, ListHomeworks.class);
                 startActivity(homeworks);
             }
         });
